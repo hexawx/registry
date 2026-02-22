@@ -1,0 +1,9 @@
+{
+  "name": "stdout-exporter",
+  "display_name": "Standard Output",
+  "version": "1.0.0",
+  "repository": "https://github.com/HexaWX/stdout-exporter",
+  "description": "Affiche les données météo dans le terminal.",
+  "binary_url": "https://github.com/HexaWX/stdout-exporter/releases/download/{{.Version}}/stdout-{{.OS}}-{{.Arch}}",
+  "author": "Florent Colinet"
+}
