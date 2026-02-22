@@ -2,7 +2,7 @@
   {
     "name": "stdout-exporter",
     "display_name": "Standard Output",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repository": "https://github.com/HexaWX/stdout-exporter",
     "description": "Affiche les données météo dans le terminal.",
     "binary_url": "https://github.com/HexaWX/stdout-exporter/releases/download/v{{.Version}}/stdout-{{.OS}}-{{.Arch}}",
@@ -11,7 +11,7 @@
   {
     "name": "dummy-driver",
     "display_name": "Input simulator",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "repository": "https://github.com/HexaWX/dummy-driver",
     "description": "Envoi des données fictives au serveur météo.",
     "binary_url": "https://github.com/HexaWX/dummy-driver/releases/download/v{{.Version}}/dummy-driver-{{.OS}}-{{.Arch}}",
