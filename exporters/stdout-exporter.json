@@ -5,5 +5,5 @@
   "repository": "https://github.com/HexaWX/stdout-exporter",
   "description": "Affiche les données météo dans le terminal.",
   "binary_url": "https://github.com/HexaWX/stdout-exporter/releases/download/{{.Version}}/stdout-{{.OS}}-{{.Arch}}",
-  "author": "Florent Colinet"
+  "author": "F. Colinet"
 }
