@@ -1,10 +1,10 @@
 name: Generate Plugin Index
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
-      - 'exporters/**'
-      - 'drivers/**'
+      - "exporters/**"
+      - "drivers/**"
   workflow_dispatch:
 
 jobs:
@@ -15,8 +15,7 @@ jobs:
 
       - name: Generate index.json
         run: |
-          # On utilise jq pour fusionner tous les JSON dans une liste
-          jq -s '.' exporters/*.json drivers/*.json > index.json
+          find exporters drivers -name "*.json" | xargs jq -s '.' > index.json
 
       - name: Deploy to GitHub Pages (ou commit l'index)
         run: |
