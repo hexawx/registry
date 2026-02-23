@@ -18,16 +18,13 @@ jobs:
 
       - name: Generate index.json
         run: |
-          find drivers exporters -name "*.json" | xargs jq -s '
-            map(
-              if (input_filename | startswith("drivers/")) then
-                . + {type: "driver"}
-              elif (input_filename | startswith("exporters/")) then
-                . + {type: "exporter"}
-              else
-                .
-              end
-            )' > index.json
+          find drivers exporters -name "*.json" | xargs jq -n '
+            [ inputs as $in | $in + {
+              type: (input_filename | 
+                     if contains("drivers/") then "driver" 
+                     elif contains("exporters/") then "exporter" 
+                     else "unknown" end)
+            } ]' > index.json
 
       - name: Deploy to GitHub Pages (ou commit l'index)
         run: |
