@@ -2,8 +2,8 @@
   "name": "dummy-driver",
   "display_name": "Input simulator",
   "version": "1.2.0",
-  "repository": "https://github.com/HexaWX/dummy-driver",
+  "repository": "https://github.com/hexawx/dummy-driver",
   "description": "Envoi des données fictives au serveur météo.",
-  "binary_url": "https://github.com/HexaWX/dummy-driver/releases/download/v{{.Version}}/dummy-driver-{{.OS}}-{{.Arch}}",
+  "binary_url": "https://github.com/hexawx/dummy-driver/releases/download/v{{.Version}}/dummy-driver-{{.OS}}-{{.Arch}}",
   "author": "F. Colinet"
 }
