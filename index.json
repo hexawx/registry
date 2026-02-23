@@ -1,20 +1,22 @@
 [
   {
-    "name": "stdout-exporter",
-    "display_name": "Standard Output",
-    "version": "1.3.1",
-    "repository": "https://github.com/hexawx/stdout-exporter",
-    "description": "Affiche les données météo dans le terminal.",
-    "binary_url": "https://github.com/hexawx/stdout-exporter/releases/download/v{{.Version}}/stdout-{{.OS}}-{{.Arch}}",
-    "author": "F. Colinet"
-  },
-  {
     "name": "dummy-driver",
     "display_name": "Input simulator",
     "version": "1.3.1",
     "repository": "https://github.com/hexawx/dummy-driver",
     "description": "Envoi des données fictives au serveur météo.",
     "binary_url": "https://github.com/hexawx/dummy-driver/releases/download/v{{.Version}}/dummy-driver-{{.OS}}-{{.Arch}}",
-    "author": "F. Colinet"
+    "author": "F. Colinet",
+    "type": "exporter"
+  },
+  {
+    "name": "stdout-exporter",
+    "display_name": "Standard Output",
+    "version": "1.3.1",
+    "repository": "https://github.com/hexawx/stdout-exporter",
+    "description": "Affiche les données météo dans le terminal.",
+    "binary_url": "https://github.com/hexawx/stdout-exporter/releases/download/v{{.Version}}/stdout-{{.OS}}-{{.Arch}}",
+    "author": "F. Colinet",
+    "type": "exporter"
   }
 ]
